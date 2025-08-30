@@ -9,7 +9,7 @@ load_dotenv(override=True)
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi(os.environ["ACCESS_TOKE"])
+line_bot_api = LineBotApi(os.environ["ACCESS_TOKEN"])
 handler = WebhookHandler(os.environ["CHANNEL_SECRET"])
 
 
